@@ -1,0 +1,118 @@
+// DMS Window Rules - Managed by DankMaterialShell
+// Do not edit manually - changes may be overwritten
+
+// @id=wr_1782971211732652451 @name=jetbrains-studio
+window-rule {
+    match app-id="^jetbrains-studio$"
+    open-maximized true
+    open-on-output "DP-1"
+}
+
+// @id=wr_1782971265288347010 @name=jetbrains-studio
+window-rule {
+    match app-id="^jetbrains-studio$" title="^Running Devices"
+    open-on-output "HDMI-A-1"
+}
+
+// @id=wr_1782971504021681206 @name=org.gnome.Loupe
+window-rule {
+    match app-id="^org.gnome.Loupe$"
+    open-floating true
+}
+
+// @id=wr_1782975450860752091 @name=PureRef
+window-rule {
+    match app-id="^PureRef$"
+    open-on-output "HDMI-A-1"
+    default-column-width { fixed 335; }
+    default-window-height { fixed 750; }
+}
+
+// @id=wr_1782980620589763485 @name=GitHub Desktop
+window-rule {
+    match app-id="^GitHub Desktop$"
+    open-floating true
+    default-column-width { fixed 830; }
+    default-window-height { fixed 690; }
+}
+
+// @id=wr_1783091851924861732 @name=Emulator
+window-rule {
+    match app-id="^Emulator$"
+    open-on-output "HDMI-A-1"
+    default-column-width { fixed 356; }
+    default-window-height { fixed 830; }
+}
+
+// @id=wr_1783132848392124604 @name=Waydroid
+window-rule {
+    match app-id="^Waydroid$"
+    open-on-output "HDMI-A-1"
+}
+
+// @id=wr_1783138192528959033 @name=localsend
+window-rule {
+    match app-id="^localsend$"
+    open-floating true
+}
+
+// @id=wr_1783244319031942308 @name=qalculate-gtk
+window-rule {
+    match app-id="^qalculate-gtk$"
+    open-floating true
+}
+
+// @id=wr_1783659886230449632 @name=org.kde.dolphin
+window-rule {
+    match app-id="^org.kde.dolphin$"
+    open-floating true
+    default-column-width { fixed 675; }
+    default-window-height { fixed 560; }
+}
+
+// @id=wr_1785428625836709577 @name=kitty
+window-rule {
+    match app-id="^kitty$"
+    open-floating true
+    default-column-width { fixed 613; }
+    default-window-height { fixed 410; }
+}
+
+// @id=wr_1785551598385415910 @name=obsidian
+window-rule {
+    match app-id="^obsidian$"
+    opacity 0.90
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+// @id=wr_1785815219383792179 @name=org.kde.dolphin
+window-rule {
+    match app-id="^org.kde.dolphin$"
+    opacity 0.90
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+// @id=wr_1785936697024030326 @name=code-oss
+window-rule {
+    match app-id="^code-oss$"
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+// @id=wr_1786327526344664396 @name=com.danklinux.dms
+window-rule {
+    match app-id="^com.danklinux.dms$"
+    opacity 0.90
+    background-effect {
+        blur true
+        xray true
+    }
+}

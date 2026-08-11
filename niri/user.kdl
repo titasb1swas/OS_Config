@@ -1,0 +1,64 @@
+input {
+    keyboard {
+        // -----------------------------------------------------
+        // Keyboard Repeat Sizing
+        // -----------------------------------------------------
+        repeat-rate 40
+        repeat-delay 250
+
+        // -----------------------------------------------------
+        // Keyboard Input Customization: Caps Lock to Escape
+        // -----------------------------------------------------
+        xkb {
+            // "caps:escape" explicitly converts the physical CapsLock key into an Escape key
+            // options "caps:ctrl_modifier" // Tap for Esc, hold for Ctrl
+            options "caps:escape"
+        }
+    }
+}
+
+binds {
+    // -----------------------------------------------------
+    // Razer Deathadder Elite: Universal Copy & Paste
+    // -----------------------------------------------------
+    // Side Bottom Button -> Universal Copy (Ctrl + C)
+    MouseBack { spawn "wtype" "-M" "ctrl" "-k" "c" "-m" "ctrl"; }
+    // Side Top Button -> Middle Click
+    MouseForward { spawn "wlrctl" "pointer" "click" "middle"; }
+
+    // Mouse Middle Button -> Play-Pause (Media Key)
+    f7 { spawn "playerctl" "play-pause"; }
+    // System volume up by 5% (capped at 100% or 1.0)
+    f9 { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
+    // System volume down by 5%
+    f10 { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
+
+
+    // -----------------------------------------------------
+    // Global Alt + HJKL Vim Navigation Layer
+    // -----------------------------------------------------
+    Alt+H { spawn "wtype" "-k" "Left"; }
+    Alt+J { spawn "wtype" "-k" "Down"; }
+    Alt+K { spawn "wtype" "-k" "Up"; }
+    Alt+L { spawn "wtype" "-k" "Right"; }
+    
+    Alt+BracketLeft  { spawn "wtype" "-k" "Home"; }
+    Alt+BracketRight { spawn "wtype" "-k" "End"; }
+
+    Alt+minus {spawn "wtype" "─";}
+}
+
+layout {
+    always-center-single-column
+    focus-ring {
+        active-color "#3f6778"   // Color when the window is active
+        inactive-color "#3b4261" // Color on an inactive monitor
+    }
+}
+
+window-rule {
+  match app-id="org.kde.kruler"
+  geometry-corner-radius 1
+  clip-to-geometry true
+  open-floating true
+}
