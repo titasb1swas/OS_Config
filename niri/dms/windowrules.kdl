@@ -107,10 +107,19 @@ window-rule {
     }
 }
 
-// @id=wr_1786327526344664396 @name=com.danklinux.dms
+// @id=wr_1786626567122852403 @name=com.danklinux.dms
 window-rule {
     match app-id="^com.danklinux.dms$"
-    opacity 0.90
+    opacity 0.85
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+// @id=wr_1786635593670525291 @name=zen
+window-rule {
+    match app-id="^zen$"
     background-effect {
         blur true
         xray true

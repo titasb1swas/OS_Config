@@ -1,54 +1,61 @@
+
 /* Catppuccin Mocha Blue userChrome.css*/
 /* * {
     font-family: "CaskaydiaCove Nerd Font", sans-serif !important;
 } */
-*{
+* {
   font-family: "Iosevka NF SemiBold", sans-serif !important;
- }
+}
 
-
-/* DMS Matugen Zen Browser Theme */
+/* DMS Matugen Zen Browser Theme - Shifted to True Blue */
 :root {
-  --zen-primary-color: #004d63 !important;
+  --zen-primary-color: #003863 !important; /* True sapphire blue accent */
   --toolbarbutton-icon-fill: #8ad0ee !important;
   --toolbar-field-color: #dee3e6 !important;
   --tab-selected-textcolor: #8ad0ee !important;
   --toolbar-color: #dee3e6 !important;
   --arrowpanel-color: #dee3e6 !important;
-  --arrowpanel-background: #1b2023 !important;
+  --arrowpanel-background: #131722 !important; /* Deep dark blue-gray */
   --sidebar-text-color: #dee3e6 !important;
-  --zen-main-browser-background: #0f1417 !important;
-  --zen-main-browser-background-toolbar: #0f1417 !important;
+  --zen-main-browser-background: #0f121a !important; /* Midnight blue base background */
+  --zen-main-browser-background-toolbar: #0f121a !important;
+  --zen-themed-toolbar-bg-transparent: rgba(0, 0, 0, 0) !important;
+}
+
+/* Force container transparency */
+#tabbrowser-tabs, #sidebar-box, .sidebar-panel {
+  background-color: transparent !important;
 }
 
 #zen-browser-background {
-  --zen-main-browser-background: #0f1417 !important;
-  --zen-background-opacity: .2 !important;
+  --zen-main-browser-background: #0f121a !important;
+  --zen-background-opacity: .6 !important;
 }
 
 #zen-toolbar-background {
-  --zen-main-browser-background-toolbar: #0f1417 !important;
-  --zen-background-opacity: .3 !important;
+  --zen-main-browser-background-toolbar: #0f121a !important;
+  --zen-background-opacity: .6 !important;
 }
 
+/* FIXED: Changed solid backgrounds to matching semi-transparent blue tints */
 .sidebar-placesTree {
-  background-color: #1b2023 !important;
+  background-color: rgba(19, 23, 34, 0.6) !important;
 }
 
 #zen-workspaces-button {
-  background-color: #1b2023 !important;
+  background-color: rgba(19, 23, 34, 0.6) !important;
 }
 
 #TabsToolbar {
-  background-color: #0f1417 !important;
+  background-color: rgba(15, 18, 26, 0.6) !important;
 }
 
 .urlbar-background {
-  background-color: #1b2023 !important;
+  background-color: rgba(19, 23, 34, 0.6) !important;
 }
 
 .urlbar-input::selection {
-  color: #003545 !important;
+  color: #00223d !important;
   background-color: #8ad0ee !important;
 }
 
@@ -105,12 +112,12 @@ toolbar .toolbarbutton-1 {
 }
 
 .identity-color-purple {
-  --identity-tab-color: #19546e !important;
-  --identity-icon-color: #19546e !important;
+  --identity-tab-color: #19436e !important; /* Bluer container tab color */
+  --identity-icon-color: #19436e !important;
 }
 
 #zen-appcontent-navbar-container {
-  background-color: #0f1417 !important;
+  background-color: #0f121a !important;
 }
 
 #PanelUI-menu-button .toolbarbutton-icon,
@@ -130,3 +137,4 @@ toolbar .toolbarbutton-1 {
 toolbar .toolbarbutton-1 > .toolbarbutton-icon {
   fill: #8ad0ee !important;
 }
+
