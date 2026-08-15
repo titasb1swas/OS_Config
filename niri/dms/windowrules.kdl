@@ -125,3 +125,12 @@ window-rule {
         xray true
     }
 }
+
+// @id=wr_1786760533349540931 @name=dev.zed.Zed
+window-rule {
+    match app-id="^dev.zed.Zed$"
+    background-effect {
+        blur true
+        xray true
+    }
+}
