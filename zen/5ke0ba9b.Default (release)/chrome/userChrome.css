@@ -29,29 +29,29 @@
 
 #zen-browser-background {
   --zen-main-browser-background: #0f121a !important;
-  --zen-background-opacity: .6 !important;
+  --zen-background-opacity: .5 !important;
 }
 
 #zen-toolbar-background {
   --zen-main-browser-background-toolbar: #0f121a !important;
-  --zen-background-opacity: .6 !important;
+  --zen-background-opacity: .5 !important;
 }
 
 /* FIXED: Changed solid backgrounds to matching semi-transparent blue tints */
 .sidebar-placesTree {
-  background-color: rgba(19, 23, 34, 0.6) !important;
+  background-color: rgba(19, 23, 34, 0.5) !important;
 }
 
 #zen-workspaces-button {
-  background-color: rgba(19, 23, 34, 0.6) !important;
+  background-color: rgba(19, 23, 34, 0.5) !important;
 }
 
 #TabsToolbar {
-  background-color: rgba(15, 18, 26, 0.6) !important;
+  background-color: rgba(15, 18, 26, 0.5) !important;
 }
 
 .urlbar-background {
-  background-color: rgba(19, 23, 34, 0.6) !important;
+  background-color: rgba(19, 23, 34, 0.5) !important;
 }
 
 .urlbar-input::selection {
