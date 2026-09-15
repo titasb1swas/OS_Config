@@ -11,7 +11,7 @@ window-rule {
 // @id=wr_1782971265288347010 @name=jetbrains-studio
 window-rule {
     match app-id="^jetbrains-studio$" title="^Running Devices"
-    open-on-output "HDMI-A-2"
+    open-on-output "HDMI-A-1"
 }
 
 // @id=wr_1782971504021681206 @name=org.gnome.Loupe
@@ -39,9 +39,15 @@ window-rule {
 // @id=wr_1783091851924861732 @name=Emulator
 window-rule {
     match app-id="^Emulator$"
-    open-on-output "HDMI-A-2"
+    open-on-output "HDMI-A-1"
     default-column-width { fixed 356; }
     default-window-height { fixed 830; }
+}
+
+// @id=wr_1783132848392124604 @name=Waydroid
+window-rule {
+    match app-id="^Waydroid$"
+    open-on-output "HDMI-A-1"
 }
 
 // @id=wr_1783138192528959033 @name=localsend
@@ -62,9 +68,6 @@ window-rule {
     open-floating true
     default-column-width { fixed 675; }
     default-window-height { fixed 560; }
-    background-effect {
-        noise 0.2
-    }
 }
 
 // @id=wr_1785428625836709577 @name=kitty
@@ -85,10 +88,29 @@ window-rule {
     }
 }
 
+// @id=wr_1785815219383792179 @name=org.kde.dolphin
+window-rule {
+    match app-id="^org.kde.dolphin$"
+    opacity 0.90
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+// @id=wr_1785936697024030326 @name=code-oss
+window-rule {
+    match app-id="^code-oss$"
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
 // @id=wr_1786626567122852403 @name=com.danklinux.dms
 window-rule {
     match app-id="^com.danklinux.dms$"
-    opacity 0.90
+    opacity 0.85
     background-effect {
         blur true
         xray true
@@ -104,41 +126,11 @@ window-rule {
     }
 }
 
-// @id=wr_1786800736113773963 @name=dev.zed.Zed
+// @id=wr_1786760533349540931 @name=dev.zed.Zed
 window-rule {
     match app-id="^dev.zed.Zed$"
     background-effect {
         blur true
         xray true
     }
-}
-
-// @id=wr_1787384124516036486 @name=org.gnome.FileRoller
-window-rule {
-    match app-id="^org.gnome.FileRoller$"
-    opacity 0.90
-    open-floating true
-    background-effect {
-        blur true
-        xray true
-    }
-}
-
-// @id=wr_1787732337859451742 @name=helium
-window-rule {
-    match app-id="^helium$"
-    default-column-width { fixed 761; }
-}
-
-// @id=wr_1788334448299866155 @name=WebApp-StoryDesk1934
-window-rule {
-    match app-id="^WebApp-StoryDesk1934$"
-    default-column-width { fixed 689; }
-    default-window-height { fixed 1050; }
-}
-
-// @id=dms-floating-windows @name=DMS Floating Windows
-window-rule {
-    match app-id="^com.danklinux.dms$"
-    open-floating true
 }
