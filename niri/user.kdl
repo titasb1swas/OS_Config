@@ -37,13 +37,15 @@ binds {
     // -----------------------------------------------------
     // Global Alt + HJKL Vim Navigation Layer
     // -----------------------------------------------------
-    Alt+H { spawn "wtype" "-k" "Left"; }
+    // Vim-style navigation keys for XWayland & Wayland
+    Alt+H { spawn "wtype" "-k" "Left"; } 
     Alt+J { spawn "wtype" "-k" "Down"; }
-    Alt+K { spawn "wtype" "-k" "Up"; }
-    Alt+L { spawn "wtype" "-k" "Right"; }
-    
-    Alt+BracketLeft  { spawn "wtype" "-k" "Home"; }
+    Alt+K { spawn "wtype" "-k" "Up"; } 
+    Alt+L { spawn "wtype" "-k" "Right"; } 
+    Alt+BracketLeft { spawn "wtype" "-k" "Home"; }
     Alt+BracketRight { spawn "wtype" "-k" "End"; }
+
+
 
     Alt+minus {spawn "wtype" "─";}
 }

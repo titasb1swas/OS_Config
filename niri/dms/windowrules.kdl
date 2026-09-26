@@ -11,7 +11,9 @@ window-rule {
 // @id=wr_1782971265288347010 @name=jetbrains-studio
 window-rule {
     match app-id="^jetbrains-studio$" title="^Running Devices"
-    open-on-output "HDMI-A-1"
+    open-on-output "HDMI-A-2"
+    default-column-width { fixed 366; }
+    default-window-height { fixed 835; }
 }
 
 // @id=wr_1782971504021681206 @name=org.gnome.Loupe
@@ -133,4 +135,10 @@ window-rule {
         blur true
         xray true
     }
+}
+
+// @id=dms-floating-windows @name=DMS Floating Windows
+window-rule {
+    match app-id="^com.danklinux.dms$"
+    open-floating true
 }
